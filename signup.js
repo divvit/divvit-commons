@@ -11,8 +11,8 @@ $(function() {
 
       for (i = 0; i < c; i++) {
           item = data[i];
-          html += '<input class="col-sm-1" type="radio" id="'+ groupName + i + '" name="webinar'+ groupName +'" value="' + item + '">';
-          html += '<label class="col-sm-11" control-label" for="'+ groupName + i + '">' + item + '</label>';
+          html += '<div class="row"><input class="col-sm-1" type="radio" id="'+ groupName + i + '" name="webinar'+ groupName +'" value="' + item.id + '">';
+          html += '<label class="col-sm-11" control-label" for="'+ groupName + i + '">' + item.times + '</label></div>';
       }
 
       $('.' + groupName).append(html);
